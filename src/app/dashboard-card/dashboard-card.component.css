@@ -1,0 +1,11 @@
+img{
+    height: 40vh;
+    width: 45vh;
+}
+.dashboard-card{
+    margin-left: 10vw;
+    margin-top: 5vh;
+    max-width: 45vw;
+    height: 70vh;
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.2);
+}

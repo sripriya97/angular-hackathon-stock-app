@@ -1,0 +1,19 @@
+<!--Company details-->
+<app-company-details [companyData]='companyDetails' [imageUrl]='image'></app-company-details>
+
+<!--Stock and Fin data-->
+<app-company-stock [companyStock]='companyStock' [companyFin]='companyFin'></app-company-stock>
+
+<!--news data-->
+<mat-card class="news-card">
+    <mat-card-header>
+        <mat-card-title>Company News</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <ul *ngFor='let news of companyNews'>
+            <li>
+                <app-company-news [companyNews]='news'></app-company-news>
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>

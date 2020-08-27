@@ -1,0 +1,24 @@
+.stock-fin{
+    display: flex;
+}
+
+.stock-card{
+    margin-top: 2vh;
+    height:55vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.2);
+    margin-left: 20vw;
+}
+.fin-card{
+    margin-top: 2vh;
+    height:55vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    margin-left: 25vw;
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.2);
+}

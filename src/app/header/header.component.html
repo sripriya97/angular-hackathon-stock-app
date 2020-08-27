@@ -1,0 +1,22 @@
+<!--Header-->
+<mat-toolbar>
+    <img [src]='imageURL' [alt]="imageText">
+
+    <!--Dropdown menu-->
+    <button class="explore-button" mat-flat-button [matMenuTriggerFor]="menu">Explore Stocks
+        <span class="material-icons">keyboard_arrow_down</span>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)='goToSearchPage("NWG")'>Natwest Group (NWG)</button>
+        <button mat-menu-item (click)='goToSearchPage("ICICIBANK.NS")'>ICICI Bank (ICICIBANK.NS)</button>
+        <button mat-menu-item (click)='goToSearchPage("SBIN.NS")'>State Bank of India (SBIN.NS)</button>
+        <button mat-menu-item (click)='goToSearchPage("KOTAKBANK.NS")'>Kotak Bank (KOTAKBANK.NS)</button>
+        <button mat-menu-item (click)='goToSearchPage("NIITLTD.NS")'>NIIT Ltd (NIITLTD.NS)</button>
+    </mat-menu>
+    
+    <!--Icons for profile-->
+    <div class="icons">
+        <!--Go to Dashboard page-->
+        <i class="material-icons" id="home" name="home" (click)='goToHomePage()'>home</i>
+    </div>
+</mat-toolbar>

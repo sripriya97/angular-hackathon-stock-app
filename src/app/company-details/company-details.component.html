@@ -1,0 +1,15 @@
+<!--Cards to display company data-->
+<mat-card class="company-card">
+    <h5>Company Details :</h5>
+    <mat-card-header>
+        <mat-card-title>{{companyData.sector}}</mat-card-title>
+        <mat-card-subtitle>{{companyData.industry}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Location : {{companyData.country}} , {{companyData.city}}</p>
+        <p>Full Time Employees : {{companyData.fullTimeEmployees}}</p>
+        <p>Website : <a [href]='companyData.website'>{{companyData.website}}</a></p>
+    </mat-card-content>
+    <img mat-card-image [src]="imageUrl" alt="Image">
+</mat-card>
+ 

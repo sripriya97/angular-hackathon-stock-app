@@ -1,0 +1,30 @@
+<!--Cards to display company data-->
+<div class="stock-fin">
+    <mat-card class="stock-card">
+        <mat-card-content>
+            <h3>Company Stock Details</h3>
+            <p>Average Daily Volume : {{companyStock.averageDailyVolume10Day.fmt}}</p>
+            <p>Market Capital : {{companyStock.marketCap.fmt}}</p>
+            <p>Market Change Percentage : {{companyStock.regularMarketChangePercent.fmt}}</p>
+            <p>Market Day High : {{companyStock.regularMarketDayHigh.fmt}}</p>
+            <p>Market Day Low : {{companyStock.regularMarketDayLow.fmt}}</p>
+            <p>Market Open : {{companyStock.regularMarketOpen.fmt}}</p>
+            <p>Market Previous Close : {{companyStock.regularMarketPreviousClose.fmt}}</p>
+            <p>Market Price : {{companyStock.regularMarketPrice.fmt}}</p>
+            <p>Market Volume : {{companyStock.regularMarketVolume.fmt}}</p>
+        </mat-card-content>
+    </mat-card>
+
+
+    <!--Fin detail card-->
+    <mat-card class="fin-card">
+        <mat-card-content>
+            <h3>Company Financial Details</h3>
+            <p>Current Price : {{companyFin.currentPrice.fmt}}</p>
+            <p>Gross Margins : {{companyFin.grossMargins.fmt}}</p>
+            <p>Gross Profits : {{companyFin.grossProfits.fmt}}</p>
+            <p>Profit Margins : {{companyFin.profitMargins.fmt}}</p>
+            <p>Revenue Growth : {{companyFin.revenueGrowth.fmt}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

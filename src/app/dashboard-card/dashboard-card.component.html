@@ -1,0 +1,15 @@
+<!--Cards to display market data-->
+<mat-card class="dashboard-card">
+    <mat-card-header>
+        <mat-card-title>{{marketData.fullExchangeName}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="imageUrl" alt="Image">
+    <mat-card-content>
+        <p>Market Price : {{marketData.regularMarketPrice.fmt}}</p>
+        <p>Market Previous Close : {{marketData.regularMarketPreviousClose.fmt}}</p>
+        <p>Market Time : {{marketData.regularMarketTime.fmt}}</p>
+        <p>Market Change Percent : {{marketData.regularMarketChangePercent.fmt}}</p>
+    </mat-card-content>
+</mat-card>
+
+  
