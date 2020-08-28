@@ -34,13 +34,13 @@ export class SearchResultComponent implements OnInit {
       this.companyCode = data.companyCode;
       this.image = this.imageList[this.companyCode];
       this.dataService.getCompanyDetails(this.companyCode).subscribe(data => {
-        this.companyDetails = data.summaryProfile;
-        this.companyStock = data.price;
-        this.companyFin = data.financialData;
+        this.companyDetails = data['summaryProfile'];
+        this.companyStock = data['price'];
+        this.companyFin = data['financialData'];
       });
 
       this.dataService.getCompanyNews(this.companyCode).subscribe(data => {
-        this.companyNews = data.items.result;
+        this.companyNews = data['items']['result'];
       });
 
     })
